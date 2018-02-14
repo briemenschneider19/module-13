@@ -1,7 +1,6 @@
 import RoboPiLib as RPL
 from setup import RPL
 import time
-import post_to_web as PTW
 RPL.RoboPiInit("/dev/ttyAMA0",115200)
 
 motorL = 1
@@ -16,9 +15,7 @@ while RPL.digitalRead(sensor_pin) == 1:
     PTW.state['d1'] = RPL.digitalRead(sensor_pin)
     RPL.servoWrite(motorR, 2000)
     RPL.servoWrite(motorL, 1000)
-    PTW.post()
 else:
     PTW.state['d1'] = RPL.digitalRead(sensor_pin)
     RPL.servoWrite(motorR, 0)
     RPL.servoWrite(motorL, 0)
-    PTW.post()
