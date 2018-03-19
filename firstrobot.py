@@ -1,8 +1,8 @@
-import RoboPiLib as RPL # (robotonomy) setup.py
-from setup import RPL # (robotonomy) readme
-import time # (robotonomy) post_to_web.py
-import post_to_web as PTW # (robotonomy) basic.py
-RPL.RoboPiInit("/dev/ttyAMA0",115200) # (robotonomy) setup.py
+import RoboPiLib as RPL # (robotonomy setup.py)
+from setup import RPL # (robotonomy README.md)
+import time # (robotonomy post_to_web.py)
+import post_to_web as PTW # (robotonomy basic.py)
+RPL.RoboPiInit("/dev/ttyAMA0",115200) # (robotonomy setup.py)
 
 motorL = 1 # (robo-control control.py)
 motorR = 0 # (robo-control control.py)
