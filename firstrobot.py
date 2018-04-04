@@ -1,5 +1,6 @@
 import RoboPiLib as RPL # (robotonomy setup.py)
 from setup import RPL # (robotonomy README.md)
+import time
 RPL.RoboPiInit("/dev/ttyAMA0",115200) # (robotonomy setup.py)
 
 motorL = 1 # (robo-control control.py)
