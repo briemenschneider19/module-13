@@ -11,8 +11,8 @@ b = 6
 
 while True:
     while time.time() < t_ime + a: # (robotonomy post_to_web.py)
-        RPL.servoWrite(motorR, 1000) # (robo-control control.py)
-        RPL.servoWrite(motorL, 2000) # (robo-control control.py)
+        RPL.servoWrite(motorR, 2000) # (robo-control control.py)
+        RPL.servoWrite(motorL, 1000) # (robo-control control.py)
     while time.time() > t_ime + a and time.time() < t_ime + b: # (robotonomy post_to_web.py) 
         RPL.servoWrite(motorR, 0) # (robo-control control.py)
         RPL.servoWrite(motorL, 0) # (robo-control control.py)
