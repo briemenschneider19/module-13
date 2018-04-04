@@ -6,8 +6,8 @@ RPL.RoboPiInit("/dev/ttyAMA0",115200) # (robotonomy setup.py)
 motorL = 1 # (robo-control control.py)
 motorR = 0 # (robo-control control.py)
 time = time.time() # (robotonomy post_to_web.py)
-a = 3
-b = 6
+a = 1
+b = 2
 
 while True:
     while time.time() < time + a: # (robotonomy post_to_web.py)
@@ -17,5 +17,5 @@ while True:
         RPL.servoWrite(motorR, 0) # (robo-control control.py)
         RPL.servoWrite(motorL, 0) # (robo-control control.py)
     while time.time() > time + b: # (robotonomy post_to_web.py)
-        a = a + 3
-        b = b + 3
+        a = a + 1
+        b = b + 1
