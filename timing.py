@@ -9,14 +9,14 @@ motorR = 0 # (robo-control control.py)
 RPL.servoWrite(motorR, 2000) # (robo-control control.py)
 RPL.servoWrite(motorL, 1000) # (robo-control control.py)
 
-time.sleep(.500)
+time.sleep(1)
 
 RPL.servoWrite(motorR, 2000) # (robo-control control.py)
 RPL.servoWrite(motorL, 1000) # (robo-control control.py)
 
-time.sleep(.500)
+time.sleep(1)
 
 RPL.servoWrite(motorR, 2000) # (robo-control control.py)
 RPL.servoWrite(motorL, 1000) # (robo-control control.py)
 
-time.sleep(.500)
+time.sleep(1)
